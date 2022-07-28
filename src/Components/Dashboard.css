@@ -1,0 +1,122 @@
+.dashboard {
+    height: 100vh;
+}
+
+.dashboard_header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.dashboard_header>img{
+    height: 60px;
+    margin: 0px 10px;
+}
+
+.searchbar{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    padding: 12px;
+    background: #F7F7F7;
+    border-radius: 5px 0px 0px 5px;
+    color: rgba(28, 48, 74, 0.5);
+}
+.searchbar>input{
+    width: 90%;
+    height: 40px;  
+    padding: 0px;
+    background: #F7F7F7;
+    border-radius: 0px 5px 5px 0px;
+    border: none;  
+}
+.username {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.username>h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #3A3A3A;
+    margin: 0px 10px;
+}
+.username>img{
+    height: 40px;
+    border-radius: 100%;
+}
+
+.SubtitleAndFilter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.SubtitleAndFilter>h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+margin-left: 80px;
+color: #212121;
+}
+.filter{
+    width: 17%;
+    display: flex;
+    align-items: center;
+}
+.filter_icon{
+    margin: 0px 5px;
+    width: 30px;
+    height: 30px;
+}
+.filter>P{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 101.1%;
+/* or 17px */
+
+letter-spacing: 0.05em;
+
+color: #3A3A3A;
+}
+.all_tasks {
+    margin: 30px 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo_task {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    background: #F5F9F9;
+    border-radius: 15px;
+}
+
+.todo_task>h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 101.1%;
+    color: #212121;
+    margin: 25px;
+}
+
+.todo_task>button {
+
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    background: #ECF3F3;
+    border-radius: 7px;
+    border: none;
+    font-size: 22px;
+    color: #329C89;
+}
