@@ -1,13 +1,30 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Dashboard.css'
 import Task from './Task'
 import InputTask from './InputTask'
 import Logo from '../resources/Logo.jpg'
 import { AiOutlineSearch } from 'react-icons/ai'
 import {BiFilter} from 'react-icons/bi'
+import { useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-// import FilterListIcon from '../node_modules/@mui/icons-material/FilterList';
 function Dashboard() {
+
+
+    let navigate = useNavigate();
+    useEffect(() => {
+        let authToken = sessionStorage.getItem('Auth Token')
+        if (authToken) {
+            navigate('/dashboard')
+        }
+        
+        if (!authToken) {
+            navigate('/')
+        }
+        toast("Login Sucessfull😃😃")
+    }, [])
+
     return (
         <>
             <div className='dashboard'>
@@ -47,6 +64,7 @@ function Dashboard() {
 
                 </div>
             </div>
+            <ToastContainer />
         </>
     )
 }
